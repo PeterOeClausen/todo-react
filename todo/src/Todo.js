@@ -23,6 +23,9 @@ function Todo() {
     const classes = useStyles();
     const [inputValue, setInputValue] = useState("");
     const [todoItems, setTodoItems] = useState([]);
+    useEffect(() => {
+        document.title = `You've added ${todoItems.length} items`;
+    });
 
     const onAddTodo = () => {
         if(inputValue){
@@ -39,10 +42,6 @@ function Todo() {
         setTodoItems(todoItems.map((todo, index) => index === i ? { ...todo, done: !todo.done } : todo))
     }
 
-    useEffect(() => {
-        document.title = `You've added ${todoItems.length} items`;
-    });
-
     const onKeydown = (e) => {
         if(e.keyCode === 13) { //Enter
             onAddTodo();
@@ -50,8 +49,8 @@ function Todo() {
     }
 
     return (
-        <div id="todo-container">
-            <div className="content-wrapper">
+        <div className="todo-container">
+            <div className="max-width-600">
                 <h1>Peter's Todo App in React using Hooks</h1>
                 <div className="list-wrapper">
                     <List className={classes.list}>
