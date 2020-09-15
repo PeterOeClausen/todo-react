@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Todo from './Todo';
+import Todo from './components/todo/Todo';
 import * as serviceWorker from './serviceWorker';
-import './styles.scss';
+import './index.scss';
+
 
 ReactDOM.render(
   <React.StrictMode>
