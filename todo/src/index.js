@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Todo from './components/todo/Todo';
+import Todo from './components/todo/todo.component';
 import * as serviceWorker from './serviceWorker';
 import './index.scss';
 

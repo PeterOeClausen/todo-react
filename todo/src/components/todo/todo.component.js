@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Checkbox from '@material-ui/core/Checkbox';
 import { makeStyles } from '@material-ui/core/styles';
-import './Todo.scss';
+import './todo.style.scss';
 
 const useStyles = makeStyles({
     marginTop1: {
